@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d21fi75^2xqs+^pyf&w6zno(&1--$knuhdha#7)ei78c^tc5uo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -74,14 +74,7 @@ WSGI_APPLICATION = 'crmApp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-#DATABASES = {
-#        'ENGINE': 'django.db.backends.mysql',
-#       'USER': 'root',
-#       'PASSWORD': 'nmor55209354',
-#        'HOST': 'localhost',
-#       'PORT': '3306',
-#    }
-#}
+
 
 DATABASES = {
     'default': {
