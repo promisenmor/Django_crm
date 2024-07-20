@@ -24,6 +24,9 @@ def home(request):
             return redirect('home')
     else:    
         return render(request, 'home.html', {'records':records})
+    
+def login_user(request):
+       return render(request, 'login.html')
  
 
 def logout_user(request):

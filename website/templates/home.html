@@ -4,7 +4,7 @@
 
 <div class="col-mid-6 offset-nd-3">
 
-{% if user.is_authenticated %}
+
 
 <h1>Records.....</h1>
 
@@ -46,32 +46,6 @@
   </tbody>
 
 </table>
-
-
-
-{% else %}
-<div class="col-mid-6 offset-nd-3"></div>
-<h1>Login</h1>
-<br/>
-
-<form method="POST" action="{% url 'home' %}">
-    {% csrf_token %}
-    <form>
-        <div class="mb-3">
-          <input type="text" class="form-control"  name="username", placeholder="Username", required>
-        </div>
-        <br/>
-        <div class="mb-3">
-          <input type="password" class="form-control" name="password", placeholder="Password", required>
-        </div>
-        <br/>
-        <button type="submit" class="btn btn-secondary">Login</button>
-      </form>
-
-</form>
-
-{% endif %}
-
 </div>
 
 {% endblock %} 
