@@ -57,7 +57,7 @@ ROOT_URLCONF = 'crmApp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['.vercel.app'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
